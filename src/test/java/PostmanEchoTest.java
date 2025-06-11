@@ -20,7 +20,7 @@ public class PostmanEchoTest {
                 .then()
                 .log().all()
                 .statusCode(200)
-                .body("incorrect data", equalTo("some data")) // проверка что данные вернулись в поле "data"
+                .body("data", equalTo("some data")) // проверка что данные вернулись в поле "data"
         ;
     }
 }
